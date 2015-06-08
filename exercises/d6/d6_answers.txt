@@ -1,0 +1,39 @@
+E1 GIT RESEARCH
+
+1. initializes a new git repository 
+
+2. 'git add' stages the file to be saved to the repository while 'git commit' actually saves it, aka commits the saved changes to the repository
+
+3. staged files haven't actually been saved yet but are just ready to be committed and committed files are saved versions of your code (with messages)
+
+4. -a or .
+
+5. to unstage you would use 'git reset'. to revert, you would have to find the commit message attached to the version you want to revert to by using 'git log path/to/file' and then 'gti checkout <commit> path/to/file' then 'git commit'
+
+6. because they keep things organized and tell you what is different about that verison so that you can go back and find it easily when you need to 
+
+7. isn't this the same question as the second half of #5?
+
+8. :q
+
+
+E2 GITHUB RESEARCH
+
+1. github is remote repository where you can put files to be viewed by the public. git is a version control system that saves versions of files locally as you work on them. yes, git could exist without github because there are other remote repositories...although Github is the most widely used one. github couldnt exist without git though because github depends on the git commands
+
+2. because by giving us free server space it allows us to quickly/easily create websites. the open source community surrounding github is also cool (have to pay to be private, etc)
+
+3. pushes the file from a local repository to a remote one 
+
+4. 'git pull' incorporates changes from a remote repository into your local branch. 'git pull' is basically a combination of 'git fetch' and 'git merge' where fetch goes and gets the changes and merge puts those changes into the local branch
+
+
+E4 WHATS THE INTERNET AGAIN?
+
+
+
+
+
+
+
+
