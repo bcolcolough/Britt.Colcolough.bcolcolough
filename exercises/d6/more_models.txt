@@ -1,0 +1,78 @@
+1. Views/Pages = Login, Profile, Today's Deals, Shopping Cart, Search (results), Home, Wish List
+
+2. Data = past orders, items in shopping cart, user name, user email, user credit card info, past searches, search results, saved items (items in wish list), account password, items, shipping info
+
+3. Activities = A user creates a search. A user creates an order. An user updates his wish list. A user reads a search result. A user updates his information (credit card, shipping, etc). A user can cancel ('destroy') an order. A search updates/creates a list of which items to show. 
+
+4. User - name, username, password, shipping address, billing address, credit card information 
+	Order - item, time of order, amount paid, estimated date of arrival, ship-to info, tracking number
+	Search - content (what you typed in), results, 
+	Item - product name, description, price, location, company, rating 
+	Cart - (join table) user_id, item_id, quantity
+
+5. ($ =  infinity) 
+user 1------$ order
+user $------$ search
+user 1------$ item
+search $-------$ item
+order  1-------1 item
+user 1------$ cart
+cart $------$ item
+
+6. user                                               
+ID |name|shipping|credit card|...|
+------------------------------
+   |    |        |           |
+
+
+search_results (JT)                                              
+ID |user_id|item_id|search query|
+---------------------------------
+   |       |         |          |
+
+
+cart (JT)                                               
+ID |user_id|item_id|quantity|
+------------------------------
+   |       |       |       |
+
+
+item                                               
+ID |item|order time|price|address
+------------------------------
+   |    |          |     |
+
+
+order                                               
+ID |user_id|item   |shipping|
+------------------------------
+   |       |       |       |
+
+
+
+7B-E3 ANSWERS
+
+1.
+a. gets /search ----------->  2. SearchesController
+b. gets /order --------------->  OrdersController
+c. puts /wish_list ----------->  WishListsController (doesn't correlate with a resource)??
+d. puts /profile ------------->  ProfilesController ("")
+e. destroy /order ------------>  OrdersController
+							  (has to be an user/item/cart controller right because those are resources?)
+
+3. 
+a. index
+b. index
+c. update
+d. creates
+e. deletes
+
+
+
+
+
+
+
+
+
+

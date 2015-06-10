@@ -30,6 +30,30 @@ E2 GITHUB RESEARCH
 
 E4 WHATS THE INTERNET AGAIN?
 
+1. when you press enter, your computer (the client) is making a request, or asking for data from a server. the information you are sending over the internet is bundled into manageable chunks called packets and a unique identifier (called an IP address) that is associated with your machine is attached. a port number is also attached so that the destination computer knows where to listen for the incoming request
+
+2. To find the IP address of the destination computer, the browser connects to the Domain Name Server, which gives the proper IP address so that the browser can connect to the target computer and make the request 
+
+3. the browser then sends an HTTP request to the web server
+
+5. the packet containing your request then bounces around several routers, which examine the IP address of the packet to see if it matches an address in its routing table. if it does, it sends it on, and if it doesn't, the router passes it up the infrastructure of routers to continue the process until it reaches the Network Service Proivder backbones, which have the largest routing tables and can find the destination. Then your packet is passed back down to routers until it reaches the server (the DNS has a similar hierarchy). These routers are hopefully in the same geographical area but not necessarily 
+
+6. the server processes the request and sends back an HTML file to the client 
+
+7. the browser renders the HTML into the webpage you see
+
+
+E5 RUBY ROCKS
+
+1. 404 "there isn't a github page here"
+
+2. it means that the client was able to find the server and give it the request but that the server couldn't find the information that was requested (suggesting it doesn't exist, or at least doesn't exist in that location)
+
+3. because that is the number assigned to that specific problem in the HTTP status codes established by WC3
+
+4. nope
+
+
 
 
 

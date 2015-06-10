@@ -1,7 +1,22 @@
-def filter_by_name(hash,name)
-	filter_by_name.each do ||
-	puts "#{:id,:name}"
+def find_by_name(people,name)
+	people.each do |person|
+		if person[:name] == name 
+			return person
+		end
+	end
+	nil
+end
 
+
+def filter_by_name(people,name)
+	filtered = Array.new
+	people.each do |person|
+		if person[:name] == name
+			filtered << person 
+		end
+	end
+	return filtered
+end
 
 
 people = [
@@ -22,7 +37,6 @@ people = [
     :name => "ski"
   }
 ]
-
 
 find_by_name(people, "ski")
 # => {:id=>2,:name=>"ski"}

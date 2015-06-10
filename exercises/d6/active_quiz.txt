@@ -1,0 +1,27 @@
+1. a database is simply a collection of information organized so that it can easily be accessed or modified. In computing, databases are often organized into tables that allow the data to be reorganized or reassembled without having to reorganize the tables
+
+2. a database table is a structure that organizes the data into rows and columns for easy organization. It's alot like an excel spreadsheet, with cells containing values that can be pinpointed if you know the row number and the column number.
+
+3. 
+   |    ID | user_id | content | 
+--------------------------------
+ 1 | fixnum| string  | string  |
+ 2 |       |         |         |
+
+
+4. to represent how our work will be organized so that we can more easily see the relationships of the different parts to one another and plan accordingly 
+
+5. Active Record deals with the M in MVC and is what's called Object Relational Mapping. It maps a database row to an object in ruby, saving developers the hassle of having to make queries in SQL, examining and parsing the results, etc. Instead AR does all that for you and lets you create, retrieve, and interact with data using Ruby.
+
+6. A resource is any object you want to user to be able to access or that you want to perform CRUD on. In Rails, resources are generally database tables. Active record then acts on these resources, changing them in some way 
+
+
+
+
+
+
+
+
+
+
+
